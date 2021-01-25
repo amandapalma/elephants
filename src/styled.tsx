@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const Header = styled.header`
+export const HeaderStyled = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: pink;
   padding: 0 100px 0 100px;
+  border-bottom: 1px solid black;
 `;
 
 export const Logo = styled.div`
@@ -62,7 +62,7 @@ export const ItemsContainer = styled.div`
   margin-bottom: 40px;
 `;
 
-export const Item = styled.div`
+export const ItemStyled = styled.div`
   width: 150px;
   height: auto;
   margin: auto;
