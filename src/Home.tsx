@@ -2,6 +2,18 @@ import React from 'react';
 import elephant from './assets/elephant.png';
 import { MainImg } from './styled';
 import { ItemsContainer } from './styled';
+import Icon from '@mdi/react';
+import {
+  mdiNavigation,
+  mdiEye,
+  mdiWall,
+  mdiSnake,
+  mdiTree,
+  mdiPaletteSwatch,
+  mdiJumpRope,
+  mdiElephant,
+  mdiHeadSnowflake,
+} from '@mdi/js';
 
 const Home = () => {
   return (
@@ -12,7 +24,15 @@ const Home = () => {
       </MainImg>
       <ItemsContainer>
         <div className="textItem">
-          <i>🐘 1</i>
+          <Icon
+            path={mdiEye}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+          />
+
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -20,7 +40,14 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 2</i>
+          <Icon
+            path={mdiWall}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -28,7 +55,15 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 3</i>
+          <Icon
+            path={mdiNavigation}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            rotate={-125}
+            color="black"
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -36,7 +71,15 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 1</i>
+          <Icon
+            path={mdiSnake}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+            rotate={180}
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -44,7 +87,15 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 2</i>
+          <Icon
+            path={mdiTree}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+            rotate={180}
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -52,7 +103,14 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 3</i>
+          <Icon
+            path={mdiPaletteSwatch}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -60,7 +118,15 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 1</i>
+          <Icon
+            path={mdiJumpRope}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+            rotate={180}
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -68,7 +134,15 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 2</i>
+          <Icon
+            path={mdiHeadSnowflake}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+            rotate={180}
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
@@ -76,7 +150,15 @@ const Home = () => {
           </p>
         </div>
         <div className="textItem">
-          <i>🐘 3</i>
+          <Icon
+            path={mdiElephant}
+            title="User Profile"
+            size={1}
+            horizontal
+            vertical
+            color="black"
+            rotate={180}
+          />
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by
