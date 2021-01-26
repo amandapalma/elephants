@@ -1,0 +1,23 @@
+{
+  "header": {
+    "home": "home",
+    "elephants": "elephants"
+  },
+  "home": {
+    "p1": "It was six men of Indostan to learning much inclined, who went to see the Elephant -though all of them were blind-,that each by observation might satisfy his mind.",
+    "p2": "The first approached the Elephant, and happening to fall against his broad and sturdy side, at once began to bawl: God bless me!—but the Elephant is very like a wall!",
+    "p3": "The Second, feeling of the tusk, cried: - Ho!, what have we here so very round and smooth and sharp? to me 't is mighty clear this wonder of an Elephant Is very like a spear!",
+    "p4": "The Third approached the animal, and happening to take the squirming trunk within his hands, thus boldly up and spake:- I see -  quoth he, - the Elephant is very like a snake!",
+    "p5": "The Fourth reached out his eager hand, and felt about the knee.- What most this wondrous beast is like is mighty plain, -quoth he;- is clear enough the Elephant is very like a tree!",
+    "p6": "The Fifth, who chanced to touch the ear, said: - E'en the blindest man can tell what this resembles most; deny the fact who can, this marvel of an Elephant is very like a fan!",
+    "p7": "The Sixth no sooner had begun about the beast to grope, than, seizing on the swinging tail that fell within his scope,- I see,- quoth he, - the Elephant is very like a rope!",
+    "p8": "And so these men of Indostan disputed loud and long, each in his own opinion exceeding stiff and strong, though each was partly in the right, and all were in the wrong!",
+    "p9": "So, oft in theologic wars the disputants, I ween, rail on in utter ignorance of what each other mean, and prate about an Elephant not one of them has seen!",
+    "note": "'The Blind Men and the Elephant'- The poems of John Godfrey Saxe (1872) by John Godfrey Saxe. Based on the Persian poet Muhammed Jalal al-Din Rumi's parable, 'The Elephant in the Dark'."
+  },
+  "elephants": {
+    "name": "name",
+    "age": "age",
+    "gender": "gender"
+  }
+}

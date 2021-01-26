@@ -1,0 +1,23 @@
+{
+  "header": {
+    "home": "Inicio",
+    "elephants": "elefantes"
+  },
+  "home": {
+    "p1": "Seis eran los hombres de Indostán, tan dispuestos a aprender,que al Elefante fueron a ver -Aunque todos eran ciegos-, pensando que mediante la observación su mente podrían satisfacer.",
+    "p2": "El primero se acercó al elefante, y cayéndose sobre su ancho y robusto costado, en seguida comenzó a gritar: -¡Santo Dios! ¡El elefante es muy parecido a una pared!-",
+    "p3": "El segundo, palpando el colmillo, exclamó: -¡Caramba! ¿Qué es esto tan redondo, liso y afilado? Para mí está muy claro, ¡esta maravilla de elefante es muy parecido a una lanza!",
+    "p4": "El tercero se acercó al animal, y tomando entre sus manos la retorcida trompa, valientemente exclamó: Ya veo, - dijo él, - ¡el elefante es muy parecido a una serpiente!",
+    "p5": "El cuarto extendió ansiosamente la mano y lo palpó alrededor de la rodilla: - Evidentemente, a lo que más se parece esta bestia - está muy claro, dijo él, - 'Es lo suficientemente claro que el elefante ¡es muy parecido a un árbol!",
+    "p6": "El quinto, quien por casualidad tocó la oreja, dijo: - Incluso el hombre más ciego es capaz de decir a lo que más se parece esto; Niegue la realidad el que pueda, Esta maravilla de elefante ¡es muy parecido a un abanico!",
+    "p7": "El sexto tan pronto comenzó a tantear al animal, agarró la cola que frente a él se encontraba, - Ya veo, -dijo él- ¡el elefante es muy parecido a una cuerda!",
+    "p8": "Y así estos hombres de Indostán discutieron largo y tendido,cada uno aferrados a su propia opinión, por demás firme e inflexible, aunque cada uno en parte tenía razón, ¡y al mismo tiempo todos estaban equivocados!",
+    "p9": "Así que, a menudo en las guerras teológicas, los contendientes, creo, hablan con total ignorancia de lo que cada uno quiere decir, y parlotean sobre un Elefante que ninguno de ellos ha visto",
+    "note": "'The Blind Men and the Elephant'- The poems of John Godfrey Saxe (1872) de John Godfrey Saxe. Basado en la parábola 'The Elephant in the Dark' del poeta persa, Muhammed Jalal al-Din Rumi."
+  },
+  "elephants": {
+    "name": "nombre",
+    "age": "edad",
+    "gender": "género"
+  }
+}
