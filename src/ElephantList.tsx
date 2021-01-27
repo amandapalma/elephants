@@ -14,7 +14,7 @@ export default function ElephantList(props: { elephants: Elephant[] }) {
           return <ElephantItem data={elephant} key={elephant.id} />;
         })}
       </ItemsContainer>
-      {/* <ElephantPreview></ElephantPreview> */}
+      {/* <ElephantPreview clickedElephant={foundedElephant} /> */}
     </GridContainer>
   );
 }

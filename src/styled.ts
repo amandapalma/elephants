@@ -55,11 +55,12 @@ export const MainImg = styled.div`
   }
 `;
 
-export const ItemsContainer = styled.div`
+export const ItemsContainer = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr minmax(10px, 1fr);
   grid-gap: 40px;
   margin-bottom: 40px;
+  list-style-type: none;
 `;
 
 export const ItemStyled = styled.div`

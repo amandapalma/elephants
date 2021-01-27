@@ -2,14 +2,16 @@ import React from 'react';
 
 import { Aside } from './styled';
 import { ItemStyled } from './styled';
-// import { Elephant } from './types';
+import { Elephant } from './types';
 
-export default function ElephantPreview() {
+export default function ElephantPreview(props: {
+  clickedElephant: Elephant | undefined;
+}) {
   return (
     <Aside>
       <ItemStyled>
-        {/* <div> */}
-        {/* <img alt="elephant" src={clickedElephant.img}></img>
+        {/* <div>
+          <img alt="elephant" src={clickedElephant.img}></img>
         </div>
         <h2>{clickedElephant.name}</h2>
         <h3>{clickedElephant.age}</h3> */}
