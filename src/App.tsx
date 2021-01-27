@@ -4,34 +4,29 @@ import './App.css';
 import { Main } from './styled';
 import Header from './Header';
 import Home from './Home';
-import Elephants from './Elephants';
+import Elephants from './ElephantList';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import getDataFromApi from './getDataFromApi';
+import { Elephant } from './types';
+// import ElephantPreview from './ElephantPreview';
 
-// interface Info {
-//   _id: string;
-//   name: string;
-//   image: string;
-//   sex: string;
-//   dob: string;
-//   dod: string;
-//   species: string;
-//   wikilink: string;
-//   note: string;
-// }
-
-const App = () => {
-  const [info, setInfo] = useState([]);
+export default function App() {
+  const [info, setInfo] = useState<Elephant[]>([]);
 
   useEffect(() => {
-    axios.get(`https://elephant-api.herokuapp.com/elephants`).then((res) => {
-      res.data.map((item: any) => {
-        return setInfo(item);
-      });
+    getDataFromApi().then((res) => {
+      setInfo(res);
     });
   }, []);
-  // console.log(typeof info);
-  console.log(info);
+
+  // const renderElephantPreview = (props: any) => {
+  //   const clickedId = props.match.params.id;
+
+  //   const foundedElephant = info.find((item) => {
+  //     return item.id === clickedId;
+  //   });
+  //   return <ElephantPreview clickedElephant={foundedElephant} />;
+  // };
 
   return (
     <Fragment>
@@ -43,13 +38,11 @@ const App = () => {
           <Route
             exact
             path="/elephants"
-            render={() => <Elephants></Elephants>}
-            // render={() => <Elephants elephants={info}></Elephants>}
+            render={() => <Elephants elephants={info}></Elephants>}
           />
+          {/* <Route exact path="/preview/:id" render={renderElephantPreview} /> */}
         </Switch>
       </Main>
     </Fragment>
   );
-};
-
-export default App;
+}

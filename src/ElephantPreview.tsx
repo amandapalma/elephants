@@ -1,17 +1,18 @@
 import React from 'react';
-import elephantHead from './assets/elephant-head.png';
+
 import { Aside } from './styled';
 import { ItemStyled } from './styled';
+// import { Elephant } from './types';
 
-const Card = () => {
+export default function ElephantPreview() {
   return (
     <Aside>
       <ItemStyled>
-        <div>
-          <img alt="elephant" src={elephantHead}></img>
+        {/* <div> */}
+        {/* <img alt="elephant" src={clickedElephant.img}></img>
         </div>
-        <h2>name</h2>
-        <h3>age</h3>
+        <h2>{clickedElephant.name}</h2>
+        <h3>{clickedElephant.age}</h3> */}
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           lobortis lacus in mauris finibus congue. Praesent libero erat, congue
@@ -20,6 +21,4 @@ const Card = () => {
       </ItemStyled>
     </Aside>
   );
-};
-
-export default Card;
+}
