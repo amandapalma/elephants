@@ -6,9 +6,10 @@ import { Logo } from '../styles/styled';
 import { LogoImg } from '../styles/styled';
 import { NavList } from '../styles/styled';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 const Header = () => {
-  const [t, i18n] = useTranslation('global');
+  const { t } = useTranslation();
   return (
     <HeaderStyled>
       <Link to="/">
@@ -26,8 +27,8 @@ const Header = () => {
           <li>
             <Link to="/elephants">{t('header.elephants')}</Link>
           </li>
-          <button onClick={() => i18n.changeLanguage('en')}>EN</button>
-          <button onClick={() => i18n.changeLanguage('es')}>ES</button>
+          <button onClick={() => i18next.changeLanguage('en')}>EN</button>
+          <button onClick={() => i18next.changeLanguage('es')}>ES</button>
         </NavList>
       </nav>
     </HeaderStyled>

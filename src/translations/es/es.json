@@ -16,8 +16,10 @@
     "note": "'The Blind Men and the Elephant'- The poems of John Godfrey Saxe (1872) de John Godfrey Saxe. Basado en la parábola 'The Elephant in the Dark' del poeta persa, Muhammed Jalal al-Din Rumi."
   },
   "elephants": {
-    "name": "nombre",
-    "age": "edad",
-    "gender": "género"
+    "name": "nombre: ",
+    "age": "edad: ",
+    "gender": "género: ",
+    "description": "descripción: ",
+    "more": "más información"
   }
 }

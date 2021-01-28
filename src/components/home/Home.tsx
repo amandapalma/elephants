@@ -14,13 +14,15 @@ import {
   mdiElephant,
   mdiHeadSnowflake,
 } from '@mdi/js';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-const Home = () => {
-  // const { t } = useTranslation();
+export default function Home() {
+  const { t } = useTranslation();
   return (
     <div>
-      <h1>elephants</h1>
+      <h1>
+        <p>{t('header.elephants')}</p>
+      </h1>
       <MainImg>
         <img alt="indian elephant" src={elephant}></img>
       </MainImg>
@@ -35,12 +37,7 @@ const Home = () => {
             color="black"
           />
 
-          {/* <p>{t('home.p1')}</p> */}
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p1')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -51,11 +48,7 @@ const Home = () => {
             vertical
             color="black"
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p2')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -67,11 +60,7 @@ const Home = () => {
             rotate={-125}
             color="black"
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p3')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -83,11 +72,7 @@ const Home = () => {
             color="black"
             rotate={180}
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p4')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -99,11 +84,7 @@ const Home = () => {
             color="black"
             rotate={180}
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p5')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -114,11 +95,7 @@ const Home = () => {
             vertical
             color="black"
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p6')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -130,11 +107,7 @@ const Home = () => {
             color="black"
             rotate={180}
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p7')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -146,11 +119,7 @@ const Home = () => {
             color="black"
             rotate={180}
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p8')}</p>
         </div>
         <div className="textItem">
           <Icon
@@ -162,16 +131,10 @@ const Home = () => {
             color="black"
             rotate={180}
           />
-          <p>
-            It was six men of Indostan To learning much inclined, Who went to
-            see the Elephant (Though all of them were blind), That each by
-            observation Might satisfy his mind.
-          </p>
+          <p>{t('home.p9')}</p>
         </div>
       </ItemsContainer>
-      <p>John Godfrey Saxe (1816-1887)</p>
+      <p>{t('home.note')}</p>
     </div>
   );
-};
-
-export default Home;
+}

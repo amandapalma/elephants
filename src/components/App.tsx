@@ -20,8 +20,6 @@ export default function App() {
   }, []);
 
   const renderElephantPreview = (props: any) => {
-    // console.log(typeof props);
-    console.log(props);
     const clickedId = props.match.params.id;
 
     const foundedElephant = info.find((item) => {
@@ -33,9 +31,13 @@ export default function App() {
   return (
     <Fragment>
       <Header></Header>
+      <div></div>
       <Main>
         <Switch>
-          <Route exact path="/" render={Home} />
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          {/* <Route exact path="/" render={Home} /> */}
           <Route
             exact
             path="/elephants"
