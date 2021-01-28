@@ -4,7 +4,6 @@ import { ItemStyled } from '../../styles/styled';
 import { Elephant } from '../../utils/types';
 
 export default function ElephantItem(props: { data: Elephant }) {
-  console.log(props);
   return (
     <Link to={`/preview/${props.data.id}`}>
       <ItemStyled>

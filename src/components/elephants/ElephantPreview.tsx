@@ -1,35 +1,48 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import elephant from '../../assets/elephant.png';
+import { Link, useParams } from 'react-router-dom';
 import { Aside } from '../../styles/styled';
 import { ItemStyled } from '../../styles/styled';
 import { Elephant } from '../../utils/types';
 import { useTranslation } from 'react-i18next';
 
-export default function ElephantPreview(props: {
-  clickedElephant: Elephant | undefined;
-}) {
+export default function ElephantPreview(props: { elephants: Elephant[] }) {
   const { t } = useTranslation();
 
   let { elephantId } = useParams<{ elephantId: string }>();
+
+  const selectedItem: Elephant | undefined = props.elephants.find((item) => {
+    return item.id === elephantId;
+  });
+  console.log('selectedItem:', selectedItem);
+
   return (
     <Aside>
-      {elephantId}
-
       <ItemStyled>
+        <Link to="/elephants">go back</Link>
         <div>
-          <img alt="elephant" src="https://via.placeholder.com/150"></img>
+          <img
+            alt="elephant"
+            src={selectedItem?.img !== undefined ? selectedItem.img : elephant}
+          ></img>
         </div>
-        <h2>{t('elephants.name')}Dumbo</h2>
-        <h3>{t('elephants.age')}38</h3>
-        <h3>{t('elephants.gender')}male</h3>
-        <h3>{t('elephants.more')}more info</h3>
+        <h2>
+          {t('elephants.name')}{' '}
+          {selectedItem?.name !== undefined ? selectedItem.name : 'unknown'}
+        </h2>
+        <h3>
+          {t('elephants.gender')}{' '}
+          {selectedItem?.gender !== undefined ? selectedItem.gender : 'unknown'}
+        </h3>
         <h3>{t('elephants.description')}</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          lobortis lacus in mauris finibus congue. Praesent libero erat, congue
-          eu nulla at, feugiat cursus nisl.
+          {selectedItem?.description !== undefined
+            ? selectedItem.description
+            : 'unknown'}
         </p>
       </ItemStyled>
     </Aside>
   );
 }
+
+// | undefined
