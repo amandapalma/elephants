@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ItemStyled } from './styled';
-import { Elephant } from './types';
+import { ItemStyled } from '../../styles/styled';
+import { Elephant } from '../../utils/types';
 
 export default function ElephantItem(props: { data: Elephant }) {
   console.log(props);

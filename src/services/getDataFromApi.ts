@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Elephant } from './types';
+import { Elephant } from '../utils/types';
 
 export default function getDataFromApi(): Promise<Elephant[]> {
   return axios

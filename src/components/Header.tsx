@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import elephantHead from './assets/elephant-head.png';
-import './App.css';
-import { HeaderStyled } from './styled';
-import { Logo } from './styled';
-import { LogoImg } from './styled';
-import { NavList } from './styled';
+import elephantHead from '../assets/elephant-head.png';
+import { HeaderStyled } from '../styles/styled';
+import { Logo } from '../styles/styled';
+import { LogoImg } from '../styles/styled';
+import { NavList } from '../styles/styled';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {

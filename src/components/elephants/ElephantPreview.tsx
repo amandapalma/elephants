@@ -1,14 +1,18 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
-import { Aside } from './styled';
-import { ItemStyled } from './styled';
-import { Elephant } from './types';
+import { Aside } from '../../styles/styled';
+import { ItemStyled } from '../../styles/styled';
+import { Elephant } from '../../utils/types';
 
 export default function ElephantPreview(props: {
   clickedElephant: Elephant | undefined;
 }) {
+  let { elephantId } = useParams<{ elephantId: string }>();
   return (
     <Aside>
+      {elephantId}
+
       <ItemStyled>
         {/* <div>
           <img alt="elephant" src={clickedElephant.img}></img>

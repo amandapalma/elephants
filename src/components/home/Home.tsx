@@ -1,7 +1,7 @@
 import React from 'react';
-import elephant from './assets/elephant.png';
-import { MainImg } from './styled';
-import { ItemsContainer } from './styled';
+import elephant from '../../assets/elephant.png';
+import { MainImg } from '../../styles/styled';
+import { ItemsContainer } from '../../styles/styled';
 import Icon from '@mdi/react';
 import {
   mdiNavigation,
@@ -14,8 +14,10 @@ import {
   mdiElephant,
   mdiHeadSnowflake,
 } from '@mdi/js';
+// import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  // const { t } = useTranslation();
   return (
     <div>
       <h1>elephants</h1>
@@ -33,6 +35,7 @@ const Home = () => {
             color="black"
           />
 
+          {/* <p>{t('home.p1')}</p> */}
           <p>
             It was six men of Indostan To learning much inclined, Who went to
             see the Elephant (Though all of them were blind), That each by

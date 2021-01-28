@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
-import { Main } from './styled';
+import '../styles/App.css';
+import { Main } from '../styles/styled';
 import Header from './Header';
-import Home from './Home';
-import ElephantList from './ElephantList';
+import Home from './home/Home';
+import ElephantList from './elephants/ElephantList';
 import { useState, useEffect } from 'react';
-import getDataFromApi from './getDataFromApi';
-import { Elephant } from './types';
-import ElephantPreview from './ElephantPreview';
+import getDataFromApi from '../services/getDataFromApi';
+import { Elephant } from '../utils/types';
+import ElephantPreview from './elephants/ElephantPreview';
 
 export default function App() {
   const [info, setInfo] = useState<Elephant[]>([]);
@@ -41,7 +41,11 @@ export default function App() {
             path="/elephants"
             render={() => <ElephantList elephants={info}></ElephantList>}
           />
-          <Route exact path="/preview/:id" render={renderElephantPreview} />
+          <Route
+            exact
+            path="/preview/:elephantId"
+            render={renderElephantPreview}
+          />
         </Switch>
       </Main>
     </Fragment>
