@@ -33,9 +33,6 @@ export default function App() {
             <ElephantList elephants={info}></ElephantList>
           </Route>
 
-          {/* <Route exact path="/preview/:elephantId">
-            {renderElephantPreview}
-          </Route> */}
           <Route exact path="/preview/:elephantId">
             <ElephantPreview elephants={info}></ElephantPreview>
           </Route>
