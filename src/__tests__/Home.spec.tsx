@@ -1,4 +1,4 @@
-describe('home component', () => {
+export default describe('home component', () => {
   beforeEach(() => {
     console.log('before each!');
   });

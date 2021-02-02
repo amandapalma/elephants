@@ -1,7 +1,6 @@
 import { Avatar, createStyles, makeStyles, Theme } from '@material-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { ItemStyled } from '../../styles/styled';
 import { Elephant } from '../../utils/types';
 
 //Material UI
@@ -24,9 +23,7 @@ export default function ElephantItem(props: { data: Elephant }) {
   //Material UI
   const classes = useStyles();
   return (
-    <Link to={`/preview/${props.data.id}`}>
-      {/* <ItemStyled> */}
-
+    <Link to={`/preview/${props.data.name}`}>
       <li>
         <Avatar
           className={classes.large}
@@ -36,7 +33,6 @@ export default function ElephantItem(props: { data: Elephant }) {
 
         {/* <h2>{props.data.name}</h2> */}
       </li>
-      {/* </ItemStyled> */}
     </Link>
   );
 }

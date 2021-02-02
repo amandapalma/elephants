@@ -43,6 +43,7 @@ export const NavList = styled.ul`
 
 export const Main = styled.div`
   padding: 0 150px 0 150px;
+  text-align: center;
 `;
 
 export const MainImg = styled.div`
