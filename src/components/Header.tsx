@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import elephantHead from '../assets/elephant-head.png';
-import { HeaderStyled } from '../styles/styled';
+import { HeaderStyled, NavButton } from '../styles/styled';
 import { Logo } from '../styles/styled';
 import { LogoImg } from '../styles/styled';
 import { NavList } from '../styles/styled';
@@ -27,8 +27,9 @@ const Header = () => {
           <li>
             <Link to="/elephants">{t('header.elephants')}</Link>
           </li>
-          <button onClick={() => i18next.changeLanguage('en')}>EN</button>
-          <button onClick={() => i18next.changeLanguage('es')}>ES</button>
+          <span>|</span>
+          <NavButton onClick={() => i18next.changeLanguage('en')}>en</NavButton>
+          <NavButton onClick={() => i18next.changeLanguage('es')}>es</NavButton>
         </NavList>
       </nav>
     </HeaderStyled>

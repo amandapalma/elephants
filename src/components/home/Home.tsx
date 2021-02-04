@@ -1,7 +1,7 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import elephant from '../../assets/elephant.png';
-import { MainImg } from '../../styles/styled';
-import { ItemsContainer } from '../../styles/styled';
+import { Caption, HomeImg, ItemsContainer } from '../../styles/styled';
 import Icon from '@mdi/react';
 import {
   mdiNavigation,
@@ -14,20 +14,17 @@ import {
   mdiElephant,
   mdiHeadSnowflake,
 } from '@mdi/js';
-import { useTranslation } from 'react-i18next';
 
 export default function Home() {
   const { t } = useTranslation();
   return (
     <div>
-      <h1>
-        <p>{t('header.elephants')}</p>
-      </h1>
-      <MainImg>
+      <h1>{t('header.elephants')}</h1>
+      <HomeImg>
         <img alt="indian elephant" src={elephant}></img>
-      </MainImg>
+      </HomeImg>
       <ItemsContainer>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiEye}
             title="User Profile"
@@ -36,10 +33,9 @@ export default function Home() {
             vertical
             color="black"
           />
-
           <p>{t('home.p1')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiWall}
             title="User Profile"
@@ -50,7 +46,7 @@ export default function Home() {
           />
           <p>{t('home.p2')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiNavigation}
             title="User Profile"
@@ -62,7 +58,7 @@ export default function Home() {
           />
           <p>{t('home.p3')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiSnake}
             title="User Profile"
@@ -74,7 +70,7 @@ export default function Home() {
           />
           <p>{t('home.p4')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiTree}
             title="User Profile"
@@ -86,7 +82,7 @@ export default function Home() {
           />
           <p>{t('home.p5')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiPaletteSwatch}
             title="User Profile"
@@ -97,7 +93,7 @@ export default function Home() {
           />
           <p>{t('home.p6')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiJumpRope}
             title="User Profile"
@@ -109,7 +105,7 @@ export default function Home() {
           />
           <p>{t('home.p7')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiHeadSnowflake}
             title="User Profile"
@@ -121,7 +117,7 @@ export default function Home() {
           />
           <p>{t('home.p8')}</p>
         </div>
-        <div className="textItem">
+        <div>
           <Icon
             path={mdiElephant}
             title="User Profile"
@@ -133,8 +129,8 @@ export default function Home() {
           />
           <p>{t('home.p9')}</p>
         </div>
+        <Caption>{t('home.note')}</Caption>
       </ItemsContainer>
-      <p>{t('home.note')}</p>
     </div>
   );
 }

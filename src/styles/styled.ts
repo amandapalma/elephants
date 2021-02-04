@@ -1,12 +1,22 @@
 import styled from 'styled-components';
 
+// HEADER
 export const HeaderStyled = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px 0 100px;
-  border-bottom: 1px solid black;
+  // background-color: white;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1280px;
+  border: 1px solid red;
+  padding: 0 10px 0 10px;
 `;
 
 export const Logo = styled.div`
@@ -14,59 +24,48 @@ export const Logo = styled.div`
   flex-direction: row;
   align-items: center;
   width: 150px;
-  font-weight: bold;
   text-transform: uppercase;
-  padding: 5px;
 `;
 
 export const LogoImg = styled.img`
-  width: 30px;
+  width: 20px;
+  margin-right: 5px;
 `;
 
 export const NavList = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
-  list-style-type: none;
+  & :hover {
+    color: grey;
+    cursor: pointer;
+  }
+
   & li {
-    margin-left: 15px;
-    & :link,
-    :visited,
-    :active {
-      text-decoration: none;
-    }
-    & :hover {
-      color: grey;
-    }
+    margin: 0 5px 0 5px;
   }
 `;
 
+export const NavButton = styled.button`
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+  text-transform: uppercase;
+  outline: none;
+`;
+
+// MAIN
 export const Main = styled.div`
-  padding: 0 150px 0 150px;
   text-align: center;
-`;
-
-export const MainImg = styled.div`
-  width: 200px;
-  height: auto;
-  margin: auto;
-
-  & img {
-    max-width: 100%;
-  }
-`;
-
-export const ItemsContainer = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr minmax(10px, 1fr);
-  grid-gap: 40px;
+  margin-top: 80px;
   margin-bottom: 40px;
-  list-style-type: none;
+  padding: 20px;
+  background-color: lightgrey;
 `;
 
-export const ItemStyled = styled.div`
-  width: 150px;
-  height: auto;
+// HOME
+export const HomeImg = styled.div`
+  width: 200px;
   margin: auto;
 
   & img {
@@ -74,19 +73,41 @@ export const ItemStyled = styled.div`
   }
 `;
 
-export const GridContainer = styled.div`
-   {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 40px;
+// debería ser ul si lo uso también para elephantList
+export const ItemsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 60px;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+`;
+
+export const Caption = styled.p`
+  text-align: right;
+  grid-column: 2/ 4;
+  font-style: italic;
+`;
+
+// PREVIEW
+export const PreviewContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+export const CardText = styled.div`
+  text-align: left;
+  padding: 30px;
+  & :nth-child(n) {
+    padding-bottom: 8px;
   }
 `;
-export const Aside = styled.aside`
-   {
-    border-left: black 1px solid;
-    background-color: lightgrey;
-    & :nth-child(n) {
-      padding-top: 10px;
-    }
-  }
-`;
+
+// export const Aside = styled.aside`
+//    {
+//     border-left: black 1px solid;
+//     background-color: lightgrey;
+//     & :nth-child(n) {
+//       padding-top: 10px;
+//     }
+//   }
+// `;

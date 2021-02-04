@@ -23,16 +23,12 @@ export default function ElephantItem(props: { data: Elephant }) {
   //Material UI
   const classes = useStyles();
   return (
-    <Link to={`/preview/${props.data.name}`}>
-      <li>
-        <Avatar
-          className={classes.large}
-          alt="elephant"
-          src={props.data.img}
-        ></Avatar>
-
-        {/* <h2>{props.data.name}</h2> */}
-      </li>
+    <Link className="item" to={`/preview/${props.data.name}`}>
+      <Avatar
+        className={classes.large}
+        alt="elephant"
+        src={props.data.img}
+      ></Avatar>
     </Link>
   );
 }

@@ -1,7 +1,7 @@
 {
   "header": {
     "home": "Inicio",
-    "elephants": "elefantes"
+    "elephants": "Elefantes"
   },
   "home": {
     "p1": "Seis eran los hombres de Indostán, tan dispuestos a aprender,que al Elefante fueron a ver -Aunque todos eran ciegos-, pensando que mediante la observación su mente podrían satisfacer.",
@@ -16,10 +16,10 @@
     "note": "'The Blind Men and the Elephant'- The poems of John Godfrey Saxe (1872) de John Godfrey Saxe. Basado en la parábola 'The Elephant in the Dark' del poeta persa, Muhammed Jalal al-Din Rumi."
   },
   "elephants": {
-    "name": "nombre: ",
-    "age": "edad: ",
-    "gender": "género: ",
-    "description": "descripción: ",
-    "more": "más información"
+    "name": "Nombre: ",
+    "age": "Edad: ",
+    "gender": "Género: ",
+    "description": "Descripción: ",
+    "more": "Más información"
   }
 }

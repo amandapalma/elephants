@@ -1,20 +1,17 @@
-import React, { Fragment } from 'react';
-// import { useState, useEffect } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import '../styles/App.css';
-import { Main } from '../styles/styled';
-// import { Elephant } from '../utils/types';
 import Header from './Header';
 import Home from './home/Home';
 import ElephantList from './elephants/ElephantList';
-// import getDataFromApi from '../services/getDataFromApi';
 import ElephantPreview from './elephants/ElephantPreview';
+import { Main } from '../styles/styled';
+import { Container } from '@material-ui/core';
 
 export default function App() {
   return (
-    <Fragment>
+    // <Fragment>
+    <Container>
       <Header></Header>
-
       <Main>
         <Switch>
           <Route exact path="/">
@@ -30,6 +27,7 @@ export default function App() {
           </Route>
         </Switch>
       </Main>
-    </Fragment>
+    </Container>
+    // </Fragment>
   );
 }

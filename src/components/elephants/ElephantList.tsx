@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ElephantItem from './ElephantItem';
-// import ElephantPreview from './ElephantPreview';
-import { Aside, ItemsContainer } from '../../styles/styled';
-import { GridContainer } from '../../styles/styled';
-import { Elephant } from '../../utils/types';
 import getDataFromApi from '../../services/getDataFromApi';
+import ElephantItem from './ElephantItem';
+import { Elephant } from '../../utils/types';
+// import Grid from '@material-ui/core/Grid';
+import { ItemsContainer } from '../../styles/styled';
 
 export default function ElephantList() {
   const [info, setInfo] = useState<Elephant[]>([]);
@@ -15,16 +14,26 @@ export default function ElephantList() {
     });
   }, []);
 
+  //   return (
+  //     <Grid container spacing={3}>
+  //       {/* <ItemsContainer> */}
+  //       {info.map((elephant) => {
+  //         return (
+  //           <Grid item xs={12} sm={4}>
+  //             <ElephantItem data={elephant} key={elephant.id} />
+  //           </Grid>
+  //         );
+  //       })}
+  //       {/* </ItemsContainer> */}
+  //     </Grid>
+  //   );
+  // }
+
   return (
-    <GridContainer>
-      <ItemsContainer>
-        {info.map((elephant) => {
-          return <ElephantItem data={elephant} key={elephant.id} />;
-        })}
-      </ItemsContainer>
-      <Aside>
-        {/* <ElephantPreview elephants={info}></ElephantPreview> */}
-      </Aside>
-    </GridContainer>
+    <ItemsContainer>
+      {info.map((elephant) => {
+        return <ElephantItem data={elephant} key={elephant.id} />;
+      })}
+    </ItemsContainer>
   );
 }

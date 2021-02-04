@@ -1,7 +1,7 @@
 {
   "header": {
-    "home": "home",
-    "elephants": "elephants"
+    "home": "Home",
+    "elephants": "Elephants"
   },
   "home": {
     "p1": "It was six men of Indostan to learning much inclined, who went to see the Elephant -though all of them were blind-,that each by observation might satisfy his mind.",
@@ -16,10 +16,10 @@
     "note": "'The Blind Men and the Elephant'- The poems of John Godfrey Saxe (1872) by John Godfrey Saxe. Based on the Persian poet Muhammed Jalal al-Din Rumi's parable, 'The Elephant in the Dark'."
   },
   "elephants": {
-    "name": "name: ",
-    "age": "age: ",
-    "gender": "gender: ",
-    "description": "description: ",
-    "more": "more"
+    "name": "Name: ",
+    "age": "Age: ",
+    "gender": "Gender: ",
+    "description": "Description: ",
+    "more": "More"
   }
 }
