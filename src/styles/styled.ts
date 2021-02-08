@@ -6,7 +6,7 @@ export const HeaderStyled = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  // background-color: white;
+  background-color: white;
   height: 80px;
   position: fixed;
   z-index: 999;
@@ -15,7 +15,6 @@ export const HeaderStyled = styled.header`
   transform: translateX(-50%);
   width: 100%;
   max-width: 1280px;
-  border: 1px solid red;
   padding: 0 10px 0 10px;
 `;
 
@@ -36,22 +35,33 @@ export const NavList = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
-  & :hover {
-    color: grey;
-    cursor: pointer;
-  }
 
-  & li {
-    margin: 0 5px 0 5px;
+  & :nth-child(n) {
+    margin: 0 2px 0 2px;
   }
 `;
 
 export const NavButton = styled.button`
   border: none;
   background: transparent;
-  margin-left: 5px;
-  text-transform: uppercase;
   outline: none;
+
+  & :hover {
+    color: grey;
+    cursor: pointer;
+  }
+
+  & :nth-child(n) {
+    display: flex;
+    align-items: center;
+  }
+`;
+
+export const MoreButton = styled(NavButton)`
+  color: DarkTurquoise;
+  & :nth-child(n) {
+    font-weight: 900;
+  }
 `;
 
 // MAIN
@@ -60,7 +70,6 @@ export const Main = styled.div`
   margin-top: 80px;
   margin-bottom: 40px;
   padding: 20px;
-  background-color: lightgrey;
 `;
 
 // HOME
@@ -73,19 +82,21 @@ export const HomeImg = styled.div`
   }
 `;
 
-// debería ser ul si lo uso también para elephantList
+// LIST - HOME
 export const ItemsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   grid-gap: 60px;
   justify-content: center;
-  margin-bottom: 60px;
   margin-top: 40px;
 `;
 
+export const GridItem = styled.div`
+  width: 100%;
+`;
+
 export const Caption = styled.p`
-  text-align: right;
-  grid-column: 2/ 4;
+  margin-top: 40px;
   font-style: italic;
 `;
 
@@ -93,6 +104,7 @@ export const Caption = styled.p`
 export const PreviewContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 `;
 export const CardText = styled.div`
   text-align: left;
@@ -101,13 +113,3 @@ export const CardText = styled.div`
     padding-bottom: 8px;
   }
 `;
-
-// export const Aside = styled.aside`
-//    {
-//     border-left: black 1px solid;
-//     background-color: lightgrey;
-//     & :nth-child(n) {
-//       padding-top: 10px;
-//     }
-//   }
-// `;

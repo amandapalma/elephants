@@ -1,7 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import elephant from '../../assets/elephant.png';
-import { Caption, HomeImg, ItemsContainer } from '../../styles/styled';
+import {
+  Caption,
+  HomeImg,
+  ItemsContainer,
+  GridItem,
+} from '../../styles/styled';
 import Icon from '@mdi/react';
 import {
   mdiNavigation,
@@ -24,7 +29,7 @@ export default function Home() {
         <img alt="indian elephant" src={elephant}></img>
       </HomeImg>
       <ItemsContainer>
-        <div>
+        <GridItem>
           <Icon
             path={mdiEye}
             title="User Profile"
@@ -34,8 +39,8 @@ export default function Home() {
             color="black"
           />
           <p>{t('home.p1')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiWall}
             title="User Profile"
@@ -45,8 +50,8 @@ export default function Home() {
             color="black"
           />
           <p>{t('home.p2')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiNavigation}
             title="User Profile"
@@ -57,8 +62,8 @@ export default function Home() {
             color="black"
           />
           <p>{t('home.p3')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiSnake}
             title="User Profile"
@@ -69,8 +74,8 @@ export default function Home() {
             rotate={180}
           />
           <p>{t('home.p4')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiTree}
             title="User Profile"
@@ -81,8 +86,8 @@ export default function Home() {
             rotate={180}
           />
           <p>{t('home.p5')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiPaletteSwatch}
             title="User Profile"
@@ -92,8 +97,8 @@ export default function Home() {
             color="black"
           />
           <p>{t('home.p6')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiJumpRope}
             title="User Profile"
@@ -104,8 +109,8 @@ export default function Home() {
             rotate={180}
           />
           <p>{t('home.p7')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiHeadSnowflake}
             title="User Profile"
@@ -116,8 +121,8 @@ export default function Home() {
             rotate={180}
           />
           <p>{t('home.p8')}</p>
-        </div>
-        <div>
+        </GridItem>
+        <GridItem>
           <Icon
             path={mdiElephant}
             title="User Profile"
@@ -128,9 +133,9 @@ export default function Home() {
             rotate={180}
           />
           <p>{t('home.p9')}</p>
-        </div>
-        <Caption>{t('home.note')}</Caption>
+        </GridItem>
       </ItemsContainer>
+      <Caption>{t('home.note')}</Caption>
     </div>
   );
 }

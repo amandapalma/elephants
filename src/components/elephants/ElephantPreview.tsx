@@ -4,9 +4,16 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Elephant } from '../../utils/types';
 import axios from 'axios';
-import { Card, CardMedia, CardActions, Button } from '@material-ui/core';
+import { Card, CardMedia, CardActions } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { PreviewContainer, CardText } from '../../styles/styled';
+import {
+  PreviewContainer,
+  CardText,
+  NavButton,
+  MoreButton,
+} from '../../styles/styled';
+import Icon from '@mdi/react';
+import { mdiArrowLeft } from '@mdi/js';
 
 export default function ElephantPreview() {
   //i18n
@@ -65,15 +72,21 @@ export default function ElephantPreview() {
     media: {
       height: 300,
     },
+    actions: {
+      padding: '20px',
+    },
   });
   const classes = useStyles();
   return (
     <PreviewContainer>
       <Card className={classes.card}>
-        <CardActions>
-          <Button size="small" color="secondary" variant="contained">
-            <Link to="/elephants">go back</Link>
-          </Button>
+        <CardActions className={classes.actions}>
+          <NavButton>
+            <Link to="/elephants">
+              <Icon path={mdiArrowLeft} title="arrow" size={0.8} />
+              back
+            </Link>
+          </NavButton>
         </CardActions>
 
         <CardMedia
@@ -86,7 +99,6 @@ export default function ElephantPreview() {
         />
         <CardText>
           <h2>
-            <strong>{t('elephants.name')}</strong>
             {selectedItem?.name !== undefined ? selectedItem.name : 'unknown'}
           </h2>
           <p>
@@ -101,9 +113,11 @@ export default function ElephantPreview() {
               ? selectedItem.description
               : 'unknown'}
           </p>
-          <a href={selectedItem?.more} target="_blank" rel="noreferrer">
-            more
-          </a>
+          <MoreButton>
+            <a href={selectedItem?.more} target="_blank" rel="noreferrer">
+              more
+            </a>
+          </MoreButton>
         </CardText>
       </Card>
     </PreviewContainer>

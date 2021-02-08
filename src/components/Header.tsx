@@ -22,14 +22,26 @@ const Header = () => {
       <nav>
         <NavList>
           <li>
-            <Link to="/">{t('header.home')}</Link>
+            <NavButton>
+              <Link to="/">{t('header.home')}</Link>
+            </NavButton>
           </li>
           <li>
-            <Link to="/elephants">{t('header.elephants')}</Link>
+            <NavButton>
+              <Link to="/elephants">{t('header.elephants')} </Link>
+            </NavButton>
           </li>
-          <span>|</span>
-          <NavButton onClick={() => i18next.changeLanguage('en')}>en</NavButton>
-          <NavButton onClick={() => i18next.changeLanguage('es')}>es</NavButton>
+          <span>| </span>
+          <li>
+            <NavButton onClick={() => i18next.changeLanguage('en')}>
+              <p>EN</p>
+            </NavButton>
+          </li>
+          <li>
+            <NavButton onClick={() => i18next.changeLanguage('es')}>
+              <p>ES</p>
+            </NavButton>
+          </li>
         </NavList>
       </nav>
     </HeaderStyled>

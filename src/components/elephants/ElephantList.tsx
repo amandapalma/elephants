@@ -14,21 +14,6 @@ export default function ElephantList() {
     });
   }, []);
 
-  //   return (
-  //     <Grid container spacing={3}>
-  //       {/* <ItemsContainer> */}
-  //       {info.map((elephant) => {
-  //         return (
-  //           <Grid item xs={12} sm={4}>
-  //             <ElephantItem data={elephant} key={elephant.id} />
-  //           </Grid>
-  //         );
-  //       })}
-  //       {/* </ItemsContainer> */}
-  //     </Grid>
-  //   );
-  // }
-
   return (
     <ItemsContainer>
       {info.map((elephant) => {
