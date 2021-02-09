@@ -112,7 +112,6 @@ export default function ElephantPreview() {
               ? selectedItem.description
               : 'unknown'}
           </p>
-
           <MoreButton>
             <a
               href={selectedItem?.more !== undefined ? selectedItem.more : '#'}
