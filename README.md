@@ -1,4 +1,6 @@
-<img  width="100" src="https://github.com/amandapalma/elephants/blob/master/src/assets/elephant.png?raw=true">
+# Elephants
+
+<img  width="300" src="https://github.com/amandapalma/elephants/blob/master/src/assets/elephant.png?raw=true">
 
 **Elephants** is a small tribute to these pachyderms in the form of a **SPA web**, which contains a list of [real](https://en.wikipedia.org/wiki/List_of_individual_elephants) elephants throughout history with some descriptive data about each one, some luckier than others.
 
@@ -6,7 +8,7 @@ They are the largest land mammal in the world and are also known to be extremely
 
 Today there are only two species of elephants left in the world, the Asian elephant and the African elephant, the latter being the largest land animal in the world. Unfortunately, the greatest threat to African elephants is poaching that fuels the illegal ivory trade, and for Asian elephants, the loss of habitat and the resulting human-elephant conflict that this generates.
 
-# Stack
+## Stack
 
 The application has been built with **[React]**(https://reactjs.org/) and **[Typescript]**(https://www.typescriptlang.org/), using **[118next]**(https://react.i18next.com/) framework for internationalization, offering a Spanish and English version app.
 
