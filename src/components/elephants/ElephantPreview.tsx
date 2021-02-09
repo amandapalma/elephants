@@ -22,46 +22,37 @@ export default function ElephantPreview() {
   //router slug
   let { eName } = useParams<{ eName: string }>();
 
-  console.log('eName: ', eName);
-
-  //states
-  const [elephantName, setElephantName] = useState<string>('');
+  //state
   const [selectedItem, setSelectedItem] = useState<Elephant>();
 
-  console.log('elephantName: ', elephantName);
-  console.log('selectedItem: ', selectedItem);
-
   function getDataByName(): Promise<Elephant> {
-    return (
-      axios
-        .get(`https://elephant-api.herokuapp.com/elephants/name/mona`)
-        // .get(
-        //   `https://elephant-api.herokuapp.com/elephants/name/${elephantName}`,
-        // )
-        .then((res) => {
-          const elephant: Elephant = {
-            id: res.data._id,
-            name: res.data.name,
-            species: res.data.species,
-            img: res.data.image,
-            gender: res.data.sex,
-            dob: res.data.dob,
-            dod: res.data.dod,
-            more: res.data.wikilink,
-            description: res.data.note,
-          };
-          return elephant;
-        })
-    );
+    return axios
+      .get(`https://elephant-api.herokuapp.com/elephants/name/${eName}`)
+      .then((res) => {
+        const elephantItem: Elephant = {
+          id: res.data._id,
+          name: res.data.name,
+          species: res.data.species,
+          img: res.data.image,
+          gender: res.data.sex,
+          dob: res.data.dob,
+          dod: res.data.dod,
+          more: res.data.wikilink,
+          description: res.data.note,
+        };
+        return elephantItem;
+      });
   }
 
   useEffect(() => {
-    setElephantName(eName);
     getDataByName().then((res) => {
       setSelectedItem(res);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  console.log('eName: ', eName);
+  console.log('selectedItem: ', selectedItem);
 
   const useStyles = makeStyles({
     card: {
@@ -76,7 +67,9 @@ export default function ElephantPreview() {
       padding: '20px',
     },
   });
+
   const classes = useStyles();
+
   return (
     <PreviewContainer>
       <Card className={classes.card}>
@@ -99,7 +92,7 @@ export default function ElephantPreview() {
         />
         <CardText>
           <h2>
-            {selectedItem?.name !== undefined ? selectedItem.name : 'unknown'}
+            {selectedItem?.name !== undefined ? selectedItem.name : 'Unknown'}
           </h2>
           <p>
             <strong>{t('elephants.gender')}</strong>
@@ -108,13 +101,24 @@ export default function ElephantPreview() {
               : 'unknown'}
           </p>
           <p>
+            <strong>{t('elephants.species')}</strong>
+            {selectedItem?.species !== undefined
+              ? selectedItem.species
+              : 'unknown'}
+          </p>
+          <p>
             <strong>{t('elephants.description')}</strong>
             {selectedItem?.description !== undefined
               ? selectedItem.description
               : 'unknown'}
           </p>
+
           <MoreButton>
-            <a href={selectedItem?.more} target="_blank" rel="noreferrer">
+            <a
+              href={selectedItem?.more !== undefined ? selectedItem.more : '#'}
+              target="_blank"
+              rel="noreferrer"
+            >
               more
             </a>
           </MoreButton>

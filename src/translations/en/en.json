@@ -19,6 +19,7 @@
     "name": "Name: ",
     "age": "Age: ",
     "gender": "Gender: ",
+    "species": "Species: ",
     "description": "Description: ",
     "more": "More"
   }

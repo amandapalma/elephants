@@ -20,9 +20,14 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+// function useSlug() {}
+// let { eName } = useParams<{ eName: string }>();
+// const [elephantName, setElephantName] = useState<string>('');
+
 export default function ElephantItem(props: { data: Elephant }) {
   //Material UI
   const classes = useStyles();
+
   return (
     <Link className="item" to={`/preview/${props.data.name}`}>
       <Avatar
@@ -31,6 +36,5 @@ export default function ElephantItem(props: { data: Elephant }) {
         src={props.data.img ? props.data.img : elephant}
       ></Avatar>
     </Link>
-    
   );
 }
