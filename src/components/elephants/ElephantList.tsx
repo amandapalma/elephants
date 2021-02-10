@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import getDataFromApi from '../../services/getDataFromApi';
 import ElephantItem from './ElephantItem';
 import { Elephant } from '../../utils/types';
-// import Grid from '@material-ui/core/Grid';
 import { ItemsContainer } from '../../styles/styled';
 
 export default function ElephantList() {

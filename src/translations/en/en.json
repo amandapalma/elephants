@@ -22,5 +22,9 @@
     "species": "Species: ",
     "description": "Description: ",
     "more": "More"
+  },
+
+  "footer": {
+    "footer": "Powered with blood, sweat and ♥ by"
   }
 }

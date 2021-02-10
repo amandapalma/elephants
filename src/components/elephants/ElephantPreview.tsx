@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import elephant from '../../assets/elephant.png';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Elephant } from '../../utils/types';
 import axios from 'axios';
+import elephant from '../../assets/elephant.png';
 import { Card, CardMedia, CardActions } from '@material-ui/core';
+import Icon from '@mdi/react';
+import { mdiArrowLeft } from '@mdi/js';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   PreviewContainer,
@@ -12,17 +14,12 @@ import {
   NavButton,
   MoreButton,
 } from '../../styles/styled';
-import Icon from '@mdi/react';
-import { mdiArrowLeft } from '@mdi/js';
 
 export default function ElephantPreview() {
-  //i18n
   const { t } = useTranslation();
 
-  //router slug
   let { eName } = useParams<{ eName: string }>();
 
-  //state
   const [selectedItem, setSelectedItem] = useState<Elephant>();
 
   function getDataByName(): Promise<Elephant> {

@@ -358,9 +358,3 @@ template {
   margin: 0px;
   padding: 0px;
 }
-
-.wrapper {
-  max-width: 1200px;
-  margin: auto;
-  width: 100%;
-}

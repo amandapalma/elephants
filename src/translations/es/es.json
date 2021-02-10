@@ -22,5 +22,8 @@
     "species": "Especie: ",
     "description": "Descripción: ",
     "more": "Más información"
+  },
+  "footer": {
+    "footer": "Desarrollado con sangre, sudor y ♥ por"
   }
 }

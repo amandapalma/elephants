@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import elephantHead from '../assets/elephant-head.png';
-import { HeaderStyled, NavButton } from '../styles/styled';
-import { Logo } from '../styles/styled';
-import { LogoImg } from '../styles/styled';
-import { NavList } from '../styles/styled';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import elephantHead from '../assets/elephant-head.png';
+import {
+  HeaderStyled,
+  NavButton,
+  Logo,
+  LogoImg,
+  NavList,
+} from '../styles/styled';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -18,7 +21,6 @@ const Header = () => {
           <h3>{t('header.elephants')}</h3>
         </Logo>
       </Link>
-
       <nav>
         <NavList>
           <li>

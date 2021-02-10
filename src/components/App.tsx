@@ -4,12 +4,12 @@ import Header from './Header';
 import Home from './home/Home';
 import ElephantList from './elephants/ElephantList';
 import ElephantPreview from './elephants/ElephantPreview';
+import Footer from './Footer';
 import { Main } from '../styles/styled';
 import { Container } from '@material-ui/core';
 
 export default function App() {
   return (
-    // <Fragment>
     <Container>
       <Header></Header>
       <Main>
@@ -27,7 +27,7 @@ export default function App() {
           </Route>
         </Switch>
       </Main>
+      <Footer></Footer>
     </Container>
-    // </Fragment>
   );
 }

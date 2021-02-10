@@ -113,3 +113,16 @@ export const CardText = styled.div`
     padding-bottom: 8px;
   }
 `;
+
+//FOOTER
+export const FooterStyled = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  border-top: 1px solid silver;
+  padding: 10px;
+
+  & :nth-child(n) {
+    font-size: 9px;
+  }
+`;
