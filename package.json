@@ -2,6 +2,7 @@
   "name": "elephants",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@mdi/js": "^5.9.55",
@@ -32,7 +33,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docs": "rm -rf docs && react-scripts build && mv build docs"
   },
   "eslintConfig": {
     "extends": [
