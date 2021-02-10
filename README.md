@@ -10,13 +10,13 @@ Today there are only two species of elephants left in the world, the Asian eleph
 
 ## Stack
 
-The application has been built with **[React]**(https://reactjs.org/) and **[Typescript]**(https://www.typescriptlang.org/), using **[118next]**(https://react.i18next.com/) framework for internationalization, offering a Spanish and English version app.
+The application has been built with [React](https://reactjs.org/) and [Typescript](https://www.typescriptlang.org/), using [118next](https://react.i18next.com/) framework for internationalization, offering a Spanish and English version app.
 
-To send requests to REST endpoints, we have used **[Axios]**(https://github.com/axios/axios), a JavaScript library that can be executed in the browser and that allows us to make simple operations as an HTTP client.
+To send requests to REST endpoints, we have used [Axios](https://github.com/axios/axios), a JavaScript library that can be executed in the browser and that allows us to make simple operations as an HTTP client.
 
-Navigation has been implemented using **[React Router]**(https://reactrouter.com/web/guides/quick-start) library, and **[Jest]**(https://jestjs.io/) and Enzyme for testing.
+Navigation has been implemented using [React Router](https://reactrouter.com/web/guides/quick-start) library, and [Jest](https://jestjs.io/) and Enzyme for testing.
 
-**[Styled Components]**(https://styled-components.com/), a CSS-in-JS styling framework that uses tagged template literals in JavaScript and CSS, and **[Material UI]**(https://material-ui.com/), a UI framework for React based on Material Design, have been used to style the components.
+[Styled Components](https://styled-components.com/), a CSS-in-JS styling framework that uses tagged template literals in JavaScript and CSS, and [Material UI](https://material-ui.com/), a UI framework for React based on Material Design, have been used to style the components.
 
 ## Install
 
