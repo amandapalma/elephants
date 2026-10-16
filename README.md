@@ -1,79 +1,53 @@
 # Elephants
 
-<img  width="300" src="https://github.com/amandapalma/elephants/blob/master/src/assets/elephant.png?raw=true">
+<img width="300" src="https://github.com/amandapalma/elephants/blob/master/src/assets/elephant.png?raw=true">
 
-**Elephants** is a small tribute to these pachyderms in the form of a **SPA web**, which contains a list of [real](https://en.wikipedia.org/wiki/List_of_individual_elephants) elephants throughout history with some descriptive data about each one, some luckier than others.
+**Demo:** https://amandapalma.github.io/elephants/
 
-They are the largest land mammal in the world and are also known to be extremely intelligent. They are often associated with good memory, and several studies confirm this. They are docile and strong animals that have inhabited the earth for about eight million years; each culture has been linked to them in a different way: they became gods, slaves, prized objects and even raw material.
+Elephants is a small tribute to these pachyderms in the form of a single-page web app. It shows a list of [real elephants](https://en.wikipedia.org/wiki/List_of_individual_elephants) throughout history, with descriptive data about each one, some luckier than others.
 
-Today there are only two species of elephants left in the world, the Asian elephant and the African elephant, the latter being the largest land animal in the world. Unfortunately, the greatest threat to African elephants is poaching that fuels the illegal ivory trade, and for Asian elephants, the loss of habitat and the resulting human-elephant conflict that this generates.
+## Features
+
+- Home page and list of elephants.
+- Detail view for each elephant (species, sex, birth, death, notes and a link to Wikipedia).
+- Spanish and English versions.
+
+## About elephants
+
+They are the largest land mammal in the world and are also known to be extremely intelligent. They have strong social bonds and a remarkable memory: studies of elephant herds suggest that matriarchs remember water sources and other elephants for decades. The elephant family has lived on Earth for millions of years, and each culture has linked them to humans in a different way: they became gods, slaves, prized objects and even raw material.
+
+Today there are three living species of elephants: the African savanna elephant, the African forest elephant and the Asian elephant. According to the IUCN, the main threat to African elephants has been poaching for the illegal ivory trade, while for Asian elephants it is the loss of habitat and the resulting human-elephant conflict.
 
 ## Stack
 
-The application has been built with [React](https://reactjs.org/) and [Typescript](https://www.typescriptlang.org/), using [118next](https://react.i18next.com/) framework for internationalization, offering a Spanish and English version app.
+- [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/)
+- [i18next](https://react.i18next.com/) for internationalization
+- [Axios](https://github.com/axios/axios) to request the data from the API
+- [React Router](https://reactrouter.com/web/guides/quick-start) for navigation
+- [Styled Components](https://styled-components.com/) and [Material UI](https://material-ui.com/) for styling
+- [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/) set up for testing
 
-To send requests to REST endpoints, we have used [Axios](https://github.com/axios/axios), a JavaScript library that can be executed in the browser and that allows us to make simple operations as an HTTP client.
+## Data
 
-Navigation has been implemented using [React Router](https://reactrouter.com/web/guides/quick-start) library, and [Jest](https://jestjs.io/) and Enzyme for testing.
+> [!WARNING]
+> 🚧 **Under construction.** The public API this app used stopped working, so the data is being migrated to a static JSON API of my own, [elephants-api](https://github.com/amandapalma/elephants-api), published with GitHub Pages. Until the migration is finished, the elephants list and the detail view may not load correctly in the demo.
 
-[Styled Components](https://styled-components.com/), a CSS-in-JS styling framework that uses tagged template literals in JavaScript and CSS, and [Material UI](https://material-ui.com/), a UI framework for React based on Material Design, have been used to style the components.
+## Getting started
 
-## Install
+Install the dependencies and start the app:
 
-Install **Node Package Manager** dependencies
+```
+npm install
+npm start
+```
 
-    npm install
+Open http://localhost:3000 to view it in the browser. The page reloads when you edit the code.
 
-**React Router**
+## Scripts
 
-    npm install react-router-dom
-
-**Axios**
-
-    npm install axios
-
-**Jest**
-
-    npm install --save-dev jest
-
-**I18Next**
-
-    npm install react-i18next i18next
-
-**Material UI**
-
-    npm install @material-ui/core
-
-**Material Design Icons**
-
-    npm install @mdi/react @mdi/js
-
-**Styled Components**
-
-    npm install --save styled-components
-
-## Available Scripts
-
-In the project directory, you can run:
-
-**start**
-
-Runs the app in the development mode.
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits and you will also see any lint errors in the console.
-
-    npm start
-
-**test**
-
-Launches the test runner in the interactive watch mode.
-
-    npm test
-
-**build**
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
-
-    npm build
+| Command | What it does |
+| --- | --- |
+| `npm start` | Runs the app in development mode. |
+| `npm test` | Launches the test runner in watch mode. |
+| `npm run build` | Builds the app for production in the `build` folder. |
+| `npm run docs` | Builds the app and moves it to the `docs` folder, which GitHub Pages serves. |
